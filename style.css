@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=EB+Garamond:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=EB+Garamond:wght@500&family=Noto+Serif+JP&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+.topBar{
+    background-color: #1e1f30;
+    display: flex;
+    justify-content: space-between;
+    height: 9vh;
+    width: 100vw;
+    position: fixed;
+    align-items: center;
+}
+.rightTopBar{
+    /* background-color: whitesmoke; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.logo{
+    margin-left: 1%;
+}
+.hr1{
+    background: white;
+    width: 0.2rem;
+    height: 60%;
+    margin-left: 1%;
+}
+h2{
+    margin-right: 25%;
+    font-size: 2.1rem;
+    margin-left: 1%;
+    color: white;
+    font-family: 'EB Garamond', serif;;
+}
+.information{
+    font-size: 2rem;
+    margin-right: 10%;
+    color: white;
+    font-family: 'EB Garamond', serif;
+}
+.container{
+    width: 100vw;
+    /* background-color: yellow; */
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.totalCases{
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    /* background-color: #e48257; */
+}
+
+h4{
+    font-size: 1.8rem;
+    font-family: 'Cormorant Garamond', serif;
+    color: #e61139;
+}
+.displayTotalCases{
+    /* background: salmon; */
+    height: 4rem;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    font-size: 3rem;
+    margin-top: 2%;
+    color: #ff083a;
+}
+.new{
+    margin: 0;
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+    width : 90%;
+    font-family: 'Noto Serif JP', serif;
+    border-radius: 9px;
+}
+h3{
+    font-size: 1.8rem;
+    margin-top: 10%;
+    font-family: 'Cormorant Garamond', serif;
+    text-decoration: underline;
+    line-height: 1.6;
+    margin-right: 10%;
+    color: white;
+}
+body{
+    width: 100vw;
+    position: fixed;
+    background: #161625
+}
+.hr2{
+    background: chocolate;
+    height: 0.2rem;
+    margin-top: 10%;
+    width: 80%;
+    margin-left: 4%;
+    
+}
+.leftContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    animation: myAnimation 1.5s ease-out;
+}
+.statesContainer{
+    display: flex;
+    flex-direction: column;
+    /* background: rosybrown; */
+    width: 100%;
+    height: 100vh;
+    margin-left: 13%;
+    align-items: center;
+    overflow: scroll;
+}
+.states{
+    /* background: red; */
+    margin-top: 3%;
+    /* margin-right: 10%; */
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+    width : 90%;
+    font-family: 'Noto Serif JP', serif;
+    border-radius: 9px;
+    box-shadow: 0 10px 10px  rgba(40, 167, 68,0.5);
+    animation: myAnimation 1s ease-out;
+}
+
+/* .states:hover{
+    cursor: pointer;
+} */
+.information:hover{
+    cursor: pointer;
+}
+.stateNumber{
+    color: rgb(40, 167, 68);
+}
+.stateName{
+    color: #6c757d;
+}
+.scrollDown{
+    position: absolute;
+    bottom: -3%;
+    height: 14rem;
+    left: 8%;
+    animation: myAnimation 1.5s ease-out;
+    opacity: 0.9;
+}
+
+.rightContainer{
+    /* background-color: rgba(52, 79, 161,0.6); */
+    display: flex;
+    flex-direction: column;
+    margin-top:6%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 5%;
+    width: 70vw;
+    height: auto;
+    margin-left: 5%;
+    
+}
+#myChart{
+    width: auto;
+    margin-top: 1%;
+    /* background-color: white; */
+    /* background: linear-gradient(to right bottom,  */
+    animation: myAnimation 3s ease-in;
+    
+}
+.container2{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    /* background: midnightblue; */
+    align-items: center;
+}
+.same{
+    /* background: maroon; */
+    width: 30%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+.recovered{
+    box-shadow: 0 0 20px 5px #037bfe;
+}
+.deaths{
+    box-shadow: 0 0 20px 5px #8e6db0;
+}
+@keyframes myAnimation {
+    from{transform : translateY(-90px);
+    opacity: 0;}
+    to{transform: translateY(0px);
+    opacity: 1;}
+}
