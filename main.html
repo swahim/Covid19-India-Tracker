@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Logo.png" type="image/png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="styleSheet" href="style.css"> -->
+    <link rel="styleSheet" href="backup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <title>Covid-19 Tracker</title>
+    <!-- <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+</head>
+<body>
+    
+    <header>
+    <div class="topBar">
+        <img class="infoImage" src="./images/info.svg" alt="info">
+        <img class="logo" src="./images/Logo.svg" alt="logo" style="height: 6rem;">
+        <div class="hr1"></div>
+        <h2>Covid-19 India Tracker</h2>
+        <div class="rightTopBar">
+            <a class="information">Information</a>
+        </div>
+    </div>
+</header>
+    <section class="section1">
+    
+    <div class="container">
+        <div class="leftContainer">
+            <div class="totalCases">
+                <h4>Total Active Cases</h4>
+                <div class="displayTotalCases"></div>
+            </div>
+            <div class="hr2"></div>
+            <div class="statesContainer">
+                <h3>Today's Active Cases</h3>
+                <!-- <div class="states">
+                    <div class="stateName">Madhya Pradesh</div>
+                    <div class="stateNumber">13131</div>
+                </div> -->
+                <img class="scrollDown" src="./images/scrollDown.svg" alt="scrollDown">
+            </div>
+        </div>
+        <div class="rightContainer">
+            <canvas id="myChart" ></canvas>
+            <div class="container2">
+                <div class="same recovered">
+                    <h5 class="recoveredText">Total Recovered</h5>
+                    <div class="recoveredData"></div>
+                </div>
+                
+                <div class="same deaths">
+                    <h5 class="DeathsText">Total Deaths</h5>
+                    <div class="deathsData"></div>
+                </div>
+            </div>
+           
+          </div>
+        </section>
+          <section>
+        <footer>
+            <div class="footer">
+                <a  class="link" target="_blank" href="https://www.mohfw.gov.in">COVID-19 INDIA</a>
+                <h6>We stand with everyone fighting on the frontlines</h6>
+                <div class="iconsContainer">
+                    <a href="https://github.com/swahim" target="_blank">
+                        <img class="icons" src="./images/github.svg">
+                    </a>
+                    <a href="https://www.linkedin.com/in/swahim-namdev-390475204/" target="_blank">
+                        <img class="icons linkedin" src="./images/linkedin.svg">
+                    </a>
+                    <a href="mailto:swahimn@gmail.com" target="_blank">
+                        <img class="icons linkedin" src="./images/mail.svg">
+                    </a>
+                </div>
+                
+            </div>
+        </footer>
+    </section>
+          
+</body>
+<script src="script.js"></script>
+<script src="graph.js"></script>
+</html>
